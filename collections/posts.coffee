@@ -1,6 +1,6 @@
 @Posts = new Meteor.Collection('posts');
-@Photos = new Meteor.Collection('photos');
 
+console.log "asdfasdf"
 Schemas.Posts = new SimpleSchema
 	createdAt:
 		type: Date
@@ -22,17 +22,17 @@ Schemas.Posts = new SimpleSchema
 				type: 'fileUpload'
 				collection: 'Attachments'
 
-	# owner:
-	# 	type: String
-	# 	regEx: SimpleSchema.RegEx.Id
-	# 	autoValue: ->
-	# 		if this.isInsert
-	# 			Meteor.userId()
-	# 	autoform:
-	# 		options: ->
-	# 			_.map Meteor.users.find().fetch(), (user)->
-	# 				label: user.emails[0].address
-	# 				value: user._id
+# owner:
+# 	type: String
+# 	regEx: SimpleSchema.RegEx.Id
+# 	autoValue: ->
+# 		if this.isInsert
+# 			Meteor.userId()
+# 	autoform:
+# 		options: ->
+# 			_.map Meteor.users.find().fetch(), (user)->
+# 				label: user.emails[0].address
+# 				value: user._id
 
 Posts.attachSchema(Schemas.Posts)
 
