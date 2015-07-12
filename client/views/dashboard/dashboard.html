@@ -18,13 +18,6 @@
 </template>
 
 <template name="posts">
-	<div id="google-map">
-		{{> googleMap
-		markers=markers
-		selectedMarkerId=selectedMarkerId}}
-	</div>
-
-
 	<div class="template-posts">
 		{{#each photos}}
 		<div class="template-post">
@@ -57,8 +50,8 @@
 					</div>
 					<div class="panel-footer" style="background-color:#ffffff;">
 						{{> favoriteButton _id=_id}}
-						<!-- <button class="comment"> comment </button>
-						{{comments _id}} -->
+						{{> commentFormToggle }}
+						{{> comments}}
 					</div>
 			</div>
 		</div>
