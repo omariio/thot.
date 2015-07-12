@@ -29,4 +29,7 @@ Meteor.startup ->
 		$.getJSON 'http://api.wunderground.com/api/66cc45223c7fe53f/conditions/q/CA/San_Francisco.json', (data) ->
 			window.weatherData = data.current_observation
 			TAPi18n.setLanguage('en')
+<<<<<<< HEAD
 		return
+=======
+>>>>>>> 785bb1e921a4b0e094ab146fdd43f2303a935ccd

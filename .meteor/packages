@@ -60,3 +60,6 @@ insecure
 mdg:camera
 autopublish
 danappelxx:hover.css
+reactive-var
+mdg:geolocation
+dburles:google-maps
