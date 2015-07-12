@@ -6,6 +6,9 @@
 					{{> addPost}}
 					{{> favoritesSidebar}}
 				</div>
+					<h1 float="right" style = "padding-left: 7px;"><i class="fa fa-cloud"></i>
+ {{currentWeather}} ºF</h1>
+ <h3 float="right" style = "padding-left: 7px; padding-right: 7px;"> Windchill {{windy}}</h3>
 				<div class="col-md-9">
 					{{> posts}}
 				</div>
@@ -22,6 +25,7 @@
 					<div class="panel-heading" style = "padding-bottom: 25px; background-color: #f5f5f5;">
 						<h3 class="panel-title" text-color = "#F6FB99;">
 							<!-- {{title}} -->
+
 							<span class="pull-right">
 								<i class="fa fa-thumbs-up"></i>{{likes}}
 								<i class="fa fa-comments"></i> {{commentCount _id}}

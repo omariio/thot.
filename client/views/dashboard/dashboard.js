@@ -11,3 +11,17 @@ Template.posts.events({
     $('div.animated').addClass('pulse');
   }
 })
+
+Template.dashboard.helpers({
+  currentWeather:function(){
+    var x = weatherData.feelslike_f;
+    return x
+  }
+});
+
+Template.dashboard.helpers({
+  windy:function(){
+      var y = weatherData.wind_string;
+      return y
+    }
+});
