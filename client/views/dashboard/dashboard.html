@@ -1,5 +1,5 @@
 <template name="dashboard">
-	<div class="template-dashboard">
+	<div class="template-dashboard" id="template-dashboard">
 		<div class="container">
 			<div class="row" id="champion-messages">
 				<div class="col-md-3">
@@ -18,9 +18,9 @@
 	<div class="template-posts">
 		{{#each photos}}
 		<div class="template-post">
-			<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">
+			<div class="panel panel-default" style = "background-color: #FFFFFF;">
+					<div class="panel-heading" style = "padding-bottom: 25px; background-color: #f5f5f5;">
+						<h3 class="panel-title" text-color = "#F6FB99;">
 							<!-- {{title}} -->
 							<span class="pull-right">
 								<i class="fa fa-thumbs-up"></i>{{likes}}
@@ -39,12 +39,12 @@
 									<!-- <div class="ontopLikes"><h1>{{likes}}</h1></div> -->
 									<img width="70%" id="p-{{_id}}" class="like" src="{{image}}"/>
 								</div>
-								<a class="pull-left" href="#">
+								<!-- <a class="pull-left" href="#">
 									{{> avatar userId=owner shape="circle"}}
-								</a>
+								</a> -->
 						</div>
 					</div>
-					<div class="panel-footer">
+					<div class="panel-footer" style="background-color:#ffffff;">
 						{{> favoriteButton _id=_id}}
 						{{> commentFormToggle }}
 						{{> comments}}

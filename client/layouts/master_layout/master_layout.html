@@ -1,4 +1,5 @@
 <template name="masterLayout">
+	<body style="background-color: rgb(251, 244, 216);">
 	<div class="layout master-layout {{$.Session.get 'sidebar'}}">
 		{{#momentum plugin='iron-router' options=momentumIRTransition}}
 			{{> yield }}
@@ -6,4 +7,5 @@
 	</div>
 
 	{{> autoformModals}}
+</body>
 </template>
