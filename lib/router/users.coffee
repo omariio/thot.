@@ -1,9 +1,9 @@
 Router.map ->
-  @route "profile",
-    path: "/profile"
-
-  @route "account",
-    path: "/account"
+  # @route "profile",
+  #   path: "/profile"
+  #
+  # @route "account",
+  #   path: "/account"
 
   # @route "setUserName",
   #   path: "/setUserName"
@@ -12,9 +12,9 @@ Router.map ->
   #       @redirect '/dashboard'
   #     @next()
 
-  @route 'signOut',
-    path: '/sign-out'
-    onBeforeAction: ->
-      Meteor.logout ->
-      @redirect '/'
-      @next()
+  # @route 'signOut',
+  #   path: '/sign-out'
+  #   onBeforeAction: ->
+  #     Meteor.logout ->
+  #     @redirect '/'
+  #     @next()

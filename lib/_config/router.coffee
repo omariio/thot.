@@ -6,15 +6,17 @@ Router.configure
   notFoundTemplate: "notFound"
   routeControllerNameConverter: "camelCase"
 
-  onBeforeAction: ->
-  	# Redirect to set username if required
-    if Config.username and Meteor.userId() and not Meteor.user().username
-      @redirect '/setUserName'
-    @next()
+  
+
+  # onBeforeAction: ->
+  # 	# Redirect to set username if required
+  #   if Config.username and Meteor.userId() and not Meteor.user().username
+  #     @redirect '/setUserName'
+  #   @next()
 
 
-Router.waitOn ->
-  subs.subscribe 'user'
+# Router.waitOn ->
+#   subs.subscribe 'user'
 
 onAfterAction = ->
   if Meteor.isClient
@@ -36,4 +38,5 @@ Router.plugin 'ensureSignedIn', except: [
   'atSignUp'
   'atForgotPassword'
   'atSignOut'
+  'dashboard'
 ]

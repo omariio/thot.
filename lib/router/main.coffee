@@ -2,6 +2,9 @@ Router.map ->
   @route "home",
     path: "/"
     layoutTemplate: "homeLayout"
+  @route "addPost",
+    path: "/addPost"
+    layoutTemplate: "addPost"  
 
   @route "dashboard",
     path: "/dashboard"
